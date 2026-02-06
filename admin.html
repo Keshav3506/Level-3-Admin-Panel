@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h1>ADMIN PANEL</h1>
+
+<div class="controls">
+  <button onclick="startTimer()">Start Timer</button>
+  <button onclick="resetTimer()">Reset Timer</button>
+  <button onclick="endRound()">End Round</button>
+  <button onclick="resetGame()">Reset Game</button>
+</div>
+
+<h2>Timer: <span id="timer">--</span></h2>
+
+<h2>Teams</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Pick</th>
+      <th>Score</th>
+      <th>Team Status</th>
+      <th>Online</th>
+    </tr>
+  </thead>
+  <tbody id="teamTable"></tbody>
+</table>
+
+<h2>X Value: <span id="xValue">--</span></h2>
+<pre id="log"></pre>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
